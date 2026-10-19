@@ -1,0 +1,47 @@
+.root {
+    -fx-base: #10161b;
+    -fx-background: black;
+    -fx-background-color: black;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+.label { -fx-text-fill: white; }
+.title { -fx-font-size: 28px; -fx-font-weight: bold; }
+.section-title { -fx-font-size: 21px; -fx-font-weight: bold; }
+.muted { -fx-text-fill: #b6c3d0; -fx-font-size: 12px; }
+.scroll-pane, .scroll-pane > .viewport { -fx-background-color: black; }
+.button, .combo-box, .text-field {
+    -fx-background-color: #0c1116;
+    -fx-border-color: #303b44;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px 12px;
+    -fx-text-fill: white;
+}
+.combo-box .list-cell { -fx-text-fill: white; }
+.button { -fx-cursor: hand; }
+.button:disabled { -fx-opacity: 0.35; }
+.button:hover { -fx-border-color: #70b4ee; }
+.import-button { -fx-background-color: #70b4ee; -fx-text-fill: black; -fx-font-weight: bold; }
+.stat-card { -fx-padding: 18px; -fx-background-radius: 7px; }
+.stat-card .label { -fx-text-fill: black; }
+.stat-value { -fx-font-size: 28px; -fx-font-weight: bold; }
+.stat-0 { -fx-background-color: #70b4ee; }
+.stat-1 { -fx-background-color: #de7378; }
+.stat-2 { -fx-background-color: #a59ad9; }
+.stat-3 { -fx-background-color: #68b29b; }
+.stat-4 { -fx-background-color: #e0b368; }
+.stat-5 { -fx-background-color: #929fe0; }
+.panel { -fx-padding: 18px; -fx-background-color: #090d10; -fx-border-color: #28333c; -fx-border-radius: 7px; -fx-background-radius: 7px; }
+.day-card { -fx-padding: 14px 8px; -fx-background-color: black; -fx-border-color: #35414b; -fx-border-radius: 5px; }
+.day-temperature { -fx-font-size: 22px; -fx-font-weight: bold; }
+.chart { -fx-padding: 0; }
+.chart-plot-background { -fx-background-color: #090d10; }
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines { -fx-stroke: #263039; }
+.chart-alternative-row-fill { -fx-fill: transparent; }
+.axis { -fx-tick-label-fill: #dce3ea; -fx-tick-label-font-size: 12px; }
+.axis-label { -fx-text-fill: #b6c3d0; }
+.default-color0.chart-series-line { -fx-stroke: #70b4ee; -fx-stroke-width: 2px; }
+.default-color0.chart-line-symbol { -fx-background-color: #70b4ee; -fx-padding: 3px; }
+.default-color0.chart-bar { -fx-bar-fill: #70b4ee; -fx-background-color: #70b4ee; }
