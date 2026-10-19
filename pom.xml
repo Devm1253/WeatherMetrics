@@ -9,7 +9,7 @@
     <artifactId>weatherwise</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>WeatherWise</name>
+    <name>WeatherMetrics</name>
     <description>Weather Data Analyzer using Java 23 and JavaFX</description>
 
     <properties>
@@ -25,15 +25,19 @@
             <version>${javafx.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.11.4</version>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>.</directory>
+                <includes><include>weatherdata.csv</include></includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -46,7 +50,10 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>com.weatherwise.WeatherApp</mainClass>
+                    <mainClass>WeatherApp</mainClass>
+                    <options>
+                        <option>--enable-native-access=javafx.graphics</option>
+                    </options>
                 </configuration>
             </plugin>
 
